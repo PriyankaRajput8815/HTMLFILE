@@ -1,0 +1,86 @@
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #161a1a;
+}
+
+ 
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #17a2c5;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;  
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #211c1c;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+.page-title {
+  height: calc(100vh - 70px);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title h1 {
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  text-align: center;
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .page-title h1 {
+    font-size: 40px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .page-title h1 {
+    font-size: 60px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .page-title h1 {
+    font-size: 80px;
+  }
+}
+
+/* TV */
+@media (min-width: 1601px) {
+  .page-title h1 {
+    font-size: 120px;
+  }
+}
+
+
